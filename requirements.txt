@@ -1,0 +1,2 @@
+PyQt6>=6.5
+segno>=1.5        # NBS IPS QR kod na fakturi (bez njega se faktura štampa bez QR koda)

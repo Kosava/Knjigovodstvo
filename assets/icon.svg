@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Računovodstvo</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B7BF0"/>
+      <stop offset="1" stop-color="#1E46B4"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E9EEF7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0B1E5B" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Podloga -->
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#bg)"/>
+
+  <!-- Faktura sa presavijenim uglom -->
+  <g filter="url(#shadow)">
+    <path d="M70 44 H158 L192 78 V204 a8 8 0 0 1 -8 8 H70 a8 8 0 0 1 -8 -8 V52 a8 8 0 0 1 8 -8 Z"
+          fill="url(#paper)"/>
+    <path d="M158 44 V70 a8 8 0 0 0 8 8 H192 Z" fill="#C9D5EA"/>
+  </g>
+
+  <!-- Redovi teksta -->
+  <rect x="84" y="70" width="52" height="9" rx="4.5" fill="#1E46B4"/>
+  <rect x="84" y="92" width="88" height="7" rx="3.5" fill="#B7C3D9"/>
+  <rect x="84" y="108" width="72" height="7" rx="3.5" fill="#B7C3D9"/>
+
+  <!-- Stubici (prihodi) -->
+  <rect x="86" y="160" width="16" height="30" rx="3" fill="#7FA6F4"/>
+  <rect x="110" y="142" width="16" height="48" rx="3" fill="#3B7BF0"/>
+  <rect x="134" y="128" width="16" height="62" rx="3" fill="#1E46B4"/>
+
+  <!-- Oznaka "plaćeno" -->
+  <circle cx="184" cy="186" r="34" fill="#1F9D5C" stroke="#FFFFFF" stroke-width="6"/>
+  <path d="M168 187 l11 11 l22 -24" fill="none" stroke="#FFFFFF" stroke-width="9"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
